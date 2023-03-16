@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Share Profile | Self</title>
+    <script src="https://kit.fontawesome.com/255c189502.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="/Image/favicon.png">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+
+    <!--Card HTML-->
+    <div class="wrapper">
+        <div class="card-wrapper">
+            <div>
+                <img src="./Image/myImage.jpg" alt="">
+            </div>
+            <div class="user-name">
+                <h2>ABHISHEK</h2>
+            </div>
+            <div>
+               <h3 class="designation">Student , C.S.E</h3>
+            </div>
+            <div class="btn-group">
+                <button onclick="openModal()" class="btn-share bta-card">
+                    <i class="fa-solid fa-share"></i>
+                    <div>Share My Profile</div>
+                </button>
+                <button class="btn-follow btn-card">Follow Me</button>
+            </div>
+        </div>
+    </div>
+
+    <!--Modal HTML-->
+    <div class="modal">
+        <div class="modal-header">
+            <h1>Share My Profile</h1>
+            <div>
+                <i onclick="closeModal()" class="fa-solid fa-xmark close"></i>
+            </div>
+        </div>
+        <div>
+            <h1>Share this via</h1>
+            <div class="icon-container">
+                <a href="https://www.facebook.com/profile.php?id=1000053743982028" target="_blank" class="icon" id="facebook">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="https://twitter.com/BroCode1508" target="_blank" class="icon" id="twitter">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com/seventy_1_/" target="_blank" class="icon" id="insta">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/abhishek-rajput-127887186/" target="_blank" class="icon" id="linkdin">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="#" class="icon" id="telegram">
+                    <i class="fa-brands fa-telegram"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay" onclick="closeModal()"></div>
+    <script src="./scripts.js"></script>
+</body>
+</html>
